@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "146886523693",
+    "firebase_url": "https://quizeroo-11a4e.firebaseio.com",
+    "project_id": "quizeroo-11a4e",
+    "storage_bucket": "quizeroo-11a4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:146886523693:android:e99fe9cb220e2454",
+        "android_client_info": {
+          "package_name": "com.example.quizeroo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "146886523693-5gfrp96om78v7aflc6oo8q376llh76fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB145wKzoW3O7_YnJJLnyQH2U4JdBkaV50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "146886523693-5gfrp96om78v7aflc6oo8q376llh76fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

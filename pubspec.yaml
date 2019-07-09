@@ -25,10 +25,9 @@ dependencies:
   cupertino_icons: ^0.1.2
   font_awesome_flutter: ^8.1.0
   flutter_masked_text: ^0.6.0
-  firebase_auth: ^0.6.2+1
+  firebase_auth: any
   firebase_core: any
-  firebase_database: ^1.0.5
-  uuid: 1.0.3
+  firebase_database: ^3.0.4
   intl: ^0.15.7
   intro_slider: ^1.0.7
   carousel_pro: ^0.0.1

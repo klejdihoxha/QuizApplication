@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'dart:math';
+
+final FirebaseDatabase database = FirebaseDatabase.instance;
 
 class Home extends StatefulWidget {
   @override
@@ -12,8 +15,7 @@ class _Home extends State<Home> {
   final formKey = new GlobalKey<FormState>();
 
   String name;
-  final FirebaseDatabase database = FirebaseDatabase.instance;
-  FirebaseUser user;
+  var random = new Random(100);
 
   bool validateAndSave() {
     final form = formKey.currentState;
@@ -32,10 +34,7 @@ class _Home extends State<Home> {
       database
           .reference()
           .child('Users')
-          .child(user.uid)
-          .child('User Profile')
-          .child('Name')
-          .set(name);
+          .child(name).set(name);
     }
   }
 
@@ -68,13 +67,11 @@ class _Home extends State<Home> {
                       child: new Carousel(
                         images: [
                           new NetworkImage(
-                              'https://www.nreionline.com/sites/nreionline.com/files/styles/article_featured_standard/public/construction-loans.jpg?itok=oL2G8e0J'),
+                              'https://www.cambridgesciencepark.co.uk/assets/thumbnail/1045/740/450/source/center/90/,%20/assets/thumbnail/1045/1480/900/source/center/90/%202x'),
                           new NetworkImage(
-                              'https://icoexaminer.com/wp-content/uploads/2018/02/mobile-banking.jpg'),
+                              'https://justfreewpthemes.com/wp-content/uploads/2019/06/WordPress-Quiz-plugin.jpg'),
                           new NetworkImage(
-                              'https://ak5.picdn.net/shutterstock/videos/12868235/thumb/4.jpg?i10c=img.resize(height:160)'),
-                          new NetworkImage(
-                              'https://st4.depositphotos.com/5934840/20466/v/600/depositphotos_204664654-stock-video-bank-and-money-hd-animation.jpg'),
+                              'https://www.yourfertility.org.au/sites/default/files/2018-09/Quiz%20icon.jpg'),
                         ],
                         showIndicator: false,
                         borderRadius: false,
@@ -148,7 +145,7 @@ class _Home extends State<Home> {
                 padding: EdgeInsets.all(12.0),
                 shape: StadiumBorder(),
                 child: Text(
-                  "SIGN UP",
+                  "GO",
                   style: TextStyle(
                       color: Colors.white, fontFamily: 'Product-Sans'),
                 ),

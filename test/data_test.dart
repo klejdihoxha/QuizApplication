@@ -5,7 +5,7 @@ import 'package:quizeroo/models/types.dart';
 import 'package:quizeroo/models/item.dart';
 
 void main() {
-  test('data returns correctly', ()
+  test('Data fetched succesfully', ()
   async {
     _handleTests(value) {
       expect(value, new isInstanceOf<List>());
